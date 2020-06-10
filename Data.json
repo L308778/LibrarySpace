@@ -1,0 +1,76 @@
+   [
+    {
+      "name": "Havard University",
+      "location":"Cambridge, MA | USA",
+      "libraries": [
+        { 
+          "name": "Lamont Library",
+          "location":"11 Quincy St",
+          "seats": 100
+        },
+        {
+          "name":"Widener Library",
+          "location":"1 Harvard Yard",
+          "seats": 100
+        },
+        {
+          "name":"Langdell Hall",
+          "location":"1545 Massachusetts Ave",
+          "seats": 100
+        }
+      ]
+    },
+    {
+      "name":"Technische Universität",
+      "location":"Resselgasse 4, 1040 Wien | Österreich",
+      "libraries": [
+        { 
+          "name": "Leck",
+          "location":"A",
+          "seats": 100
+        },
+        {
+          "name":"o",
+          "location":"B",
+          "seats": 100
+        },
+        {
+          "name":"mio",
+          "location":"C",
+          "seats": 100
+        }
+      ]
+    },
+    {
+      "name":"National University of Singapur",
+      "location":"Was i ned, irgendwo bei leo",
+      "libraries": [
+        { 
+          "name": "Gschsn 1",
+          "location":"Yonhau",
+          "seats": 100
+        },
+        {
+          "name":"Gschsn2",
+          "location":"Tschintschong",
+          "seats": 100
+        },
+        {
+          "name":"Gschsn3",
+          "location":"Hatschi",
+          "seats": 100
+        }
+      ]
+    },
+    {
+      "name":"Example University-Name",
+      "location": "Place, State | Country",
+      "libraries": [
+        {
+          "name":"Example Library 1",
+          "location":"...",
+          "seats": 42
+        }
+      ]
+    }
+  ]
