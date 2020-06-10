@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image, FlatList} from 'react-native';
-import AppIntroSlider from 'react-native-app-intro-slider';
 import Constants from 'expo-constants';
 
 //demo comment
