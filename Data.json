@@ -1,76 +1,114 @@
-   [
-    {
-      "name": "Havard University",
-      "location":"Cambridge, MA | USA",
-      "libraries": [
-        { 
-          "name": "Lamont Library",
-          "location":"11 Quincy St",
-          "seats": 100
-        },
-        {
-          "name":"Widener Library",
-          "location":"1 Harvard Yard",
-          "seats": 100
-        },
-        {
-          "name":"Langdell Hall",
-          "location":"1545 Massachusetts Ave",
-          "seats": 100
-        }
+[
+  {
+    "name": "Havard University",
+    "location":"Cambridge, MA | USA",
+    "libraries": [
+      { 
+        "name": "Lamont Library",
+        "location":"11 Quincy St",
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3727855,
+            "longitude" : -71.11547
+          }
+        ]
+      },
+      {
+        "name":"Widener Library",
+        "location":"1 Harvard Yard",
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.373464,
+            "longitude" : -71.1165039
+          }
+        ]
+      },
+      {
+        "name":"Langdell Hall",
+        "location":"1545 Massachusetts Ave",
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3779767,
+            "longitude" : -71.1185014
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name":"Technische Universität",
+    "location":"Resselgasse 4, 1040 Wien, Österreich",
+    "libraries": [
+      { 
+        "name": "TU Wien",
+        "location":"Resselgasse 4, 1040 Wien, Österreich",
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 48.199180603027344,
+            "longitude" : 16.368038177490234
+          }
+        ]
+      }
       ]
-    },
-    {
-      "name":"Technische Universität",
-      "location":"Resselgasse 4, 1040 Wien | Österreich",
-      "libraries": [
-        { 
-          "name": "Leck",
-          "location":"A",
-          "seats": 100
-        },
-        {
-          "name":"o",
-          "location":"B",
-          "seats": 100
-        },
-        {
-          "name":"mio",
-          "location":"C",
-          "seats": 100
-        }
-      ]
-    },
-    {
-      "name":"National University of Singapur",
-      "location":"Was i ned, irgendwo bei leo",
-      "libraries": [
-        { 
-          "name": "Gschsn 1",
-          "location":"Yonhau",
-          "seats": 100
-        },
-        {
-          "name":"Gschsn2",
-          "location":"Tschintschong",
-          "seats": 100
-        },
-        {
-          "name":"Gschsn3",
-          "location":"Hatschi",
-          "seats": 100
-        }
-      ]
-    },
-    {
-      "name":"Example University-Name",
-      "location": "Place, State | Country",
-      "libraries": [
-        {
-          "name":"Example Library 1",
-          "location":"...",
-          "seats": 42
-        }
-      ]
-    }
-  ]
+  },
+  {
+    "name":"National University of Singapore",
+    "location":"",
+    "libraries": [
+      { 
+        "name": "Central Library",
+        "location":"12 Kent Ridge Cres, Singapore 119275",
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 1.2970556,
+            "longitude" : 103.7728132
+          }
+        ]
+      },
+      {
+        "name":"Yale-NUS Library",
+        "location":"20 College Ave E",
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 1.3072073,
+            "longitude" : 103.7725555
+          }
+        ]
+      },
+      {
+        "name":"Hon Sui Sen",
+        "location":"1 Hon Sui Sen Dr, Singapore 117588",
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 1.2930251,
+            "longitude" : 103.7744319
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name":"Example University-Name",
+    "location": "Place, State | Country",
+    "libraries": [
+      {
+        "name":"Example Library 1",
+        "location":"...",
+        "seats": 42,
+        "coordinates": [
+          {
+            "latitude": 48.2080354,
+            "longitude" : 16.3617866
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image, FlatList} from 'react-native';
-import AppIntroSlider from 'react-native-app-intro-slider';
+import { StyleSheet, Text, View, TouchableOpacity, Image, FlatList, Dimensions} from 'react-native';
 import Constants from 'expo-constants';
+import Expo from "expo"
+import MapView, {Marker} from 'react-native-maps';
+import * as Location from 'expo-location';
+
 
 export default class LibraryScreen extends React.Component {
   constructor(props){
@@ -13,19 +16,29 @@ export default class LibraryScreen extends React.Component {
   }
 
 
-  render() {
-      // Look into console to see object with it's details. In the 'Data.json' file we can specify all the information 
-      // that is passed down to this screen. Feel free to play around to render useful data maybe. (Like an image, fake UI for API data –  
-      // which we don't have, max. seat capactiy, link to room-booking, etc. .. altough for now we should focus on getting the MVP :) )
-      console.log(this.state.libraryDetails.name)
-      return (
-        // Here we could again do a FlatList or something like that, but we should also think about cases where we have for example 
-        // only on Library (e.g. TU, WU, ...)
 
-        //FlatList is a good way to go. I think the best approach is to build one more lib component which just renders the data and map and picture
-        //I basically used the array of library from the JSON you created and inputted it into the FlatList you recommended above
+  render() {
+
+      //Access the coordinates array from the Data.json and save it in coordinate variable to be accessed
+      let coordinate = this.state.libraryDetails.coordinates[0]
+      
+      return (
+        
         <View style={styles.container}>
                 <Text style = {styles.header}> {this.state.libraryDetails.name} </Text>
+                <MapView style = {styles.mapStyle}
+                initialRegion={{
+                latitude: coordinate.latitude,
+                longitude: coordinate.longitude,
+                latitudeDelta: 0.002,
+                longitudeDelta: 0.002}}
+                >
+                <Marker
+                coordinate = 
+                {{latitude: coordinate.latitude,
+                longitude: coordinate.longitude}}
+                />
+                </MapView>
                 <Text style = {styles.title}>{this.state.libraryDetails.location}</Text>
         </View>
       );
@@ -47,5 +60,9 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     color:"Black"
+  },
+  mapStyle: {
+    width: 400,
+    height: 400,
   },
 });
