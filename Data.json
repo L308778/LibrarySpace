@@ -4,8 +4,8 @@
     "location":"Cambridge, MA | USA",
     "libraries": [
       { 
-        "name": "Lamont Library",
-        "location":"11 Quincy St",
+        "name": "Lamont",
+        "location":"11 Quincy Street",
         "seats": 100,
         "coordinates": [
           {
@@ -15,7 +15,7 @@
         ]
       },
       {
-        "name":"Widener Library",
+        "name":"Widener",
         "location":"31 Harvard Yard",
         "seats": 100,
         "coordinates": [
@@ -60,7 +60,7 @@
       },
       {
         "name":"Schlesinger",
-        "location":"3 James St",
+        "location":"3 James Street",
         "seats": 100,
         "coordinates": [
           {
@@ -70,8 +70,8 @@
         ]
       },
       {
-        "name":"Hicks - Kirkland House",
-        "location":"64 J. F. Kennedy St",
+        "name":"Hicks/Kirkland House",
+        "location":"64 J. F. Kennedy Street",
         "seats": 100,
         "coordinates": [
           {
@@ -82,7 +82,7 @@
       },
       {
         "name":"Leverett",
-        "location":"28 Dewolfe St",
+        "location":"28 Dewolfe Street",
         "seats": 100,
         "coordinates": [
           {
@@ -93,7 +93,7 @@
       },
       {
         "name":"Quincy House",
-        "location":"58 Plympton St",
+        "location":"58 Plympton Street",
         "seats": 100,
         "coordinates": [
           {
@@ -115,7 +115,7 @@
       },
       {
         "name":"Hilles",
-        "location":"59 Shepard St",
+        "location":"59 Shepard Street",
         "seats": 100,
         "coordinates": [
           {
@@ -159,7 +159,7 @@
       },
       {
         "name":"Countway",
-        "location":"10 Shattuck St",
+        "location":"10 Shattuck Street",
         "seats": 100,
         "coordinates": [
           {
@@ -170,7 +170,7 @@
       },
       {
         "name":"Smith Campus Center",
-        "location":"75 Mt Auburn St",
+        "location":"75 Mt Auburn Street",
         "seats": 100,
         "coordinates": [
           {
@@ -186,7 +186,7 @@
     "location":"Resselgasse 4, 1040 Wien, Österreich",
     "libraries": [
       { 
-        "name": "TU Wien",
+        "name": "Bibliothek",
         "location":"Resselgasse 4, 1040 Wien, Österreich",
         "seats": 100,
         "coordinates": [
@@ -199,7 +199,7 @@
       ]
   },
   {
-    "name":"National University of Singapur",
+    "name":"National University of Singapore",
     "location":"",
     "libraries": [
       { 
@@ -255,3 +255,4 @@
     ]
   }
 ]
+
