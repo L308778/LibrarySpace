@@ -19,7 +19,10 @@ export default class HomeScreen extends React.Component {
   }
 
   render() {
-    //Use of a flatlist to render all possible universities to select. Then the selected university unit is send through the params prop to the "LibraryScreen"
+    /*Use of a flatlist to render all possible universities to select. 
+    Then the selected university unit is send through the params prop to the "LibraryScreen".
+    A conditional is used in the onPress prop, to directly navigate to the Library Component, if the
+    university has only one library*/
     return (
       <View style={styles.container}>
         <Text style={styles.header}>University</Text>
@@ -28,14 +31,19 @@ export default class HomeScreen extends React.Component {
           data={libraries}
           directionalLockEnabled={true}
           horizontal={false}
+          keyExtractor={item => item.location}
           renderItem={({ item }) => (
-            console.log(item),
             (
               <TouchableOpacity
                 onPress={() => {
-                  this.props.navigation.navigate('LibraryScreen', {
-                    libraryDetails: item,
-                  });
+                  item.libraries.length === 1
+                    ? this.props.navigation.navigate('LibraryComponent', {
+                        screen: 'DataScreen',
+                        params: { libraryDetails: item.libraries[0] },
+                      })
+                    : this.props.navigation.navigate('LibraryScreen', {
+                        libraryDetails: item,
+                      });
                 }}>
                 <View style={styles.touch}>
                   <Text style={styles.text}>{item.name}</Text>

@@ -31,8 +31,8 @@ export default class LibraryScreen extends React.Component {
           directionalLockEnabled={true}
           horizontal={false}
           data={this.state.libraryDetails.libraries}
+          keyExtractor={item => item.location}
           renderItem={({ item }) => (
-            console.log(item),
             (
               <TouchableOpacity
                 onPress={() => {

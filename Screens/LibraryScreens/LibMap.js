@@ -54,7 +54,7 @@ export default class LibraryScreen extends React.Component {
             }}
           />
         </MapView>
-        <Text style={styles.text}>{this.state.libraryDetails.location}</Text>
+          <Text style={styles.text}>{this.state.libraryDetails.location}</Text>
       </View>
     );
   }
@@ -63,7 +63,6 @@ export default class LibraryScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     display: 'flex',
-    flexDirection: 'vertical',
     justifyContent: 'space-around',
     alignItems: 'center',
     height: '100%',

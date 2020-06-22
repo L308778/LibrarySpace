@@ -2,10 +2,12 @@
   {
     "name": "Havard University",
     "location":"Cambridge, MA | USA",
+    "id": 1234445,
     "libraries": [
       { 
         "name": "Lamont",
         "location":"11 Quincy Street",
+        "id": 1234,
         "seats": 100,
         "coordinates": [
           {
@@ -18,6 +20,7 @@
         "name":"Widener",
         "location":"31 Harvard Yard",
         "seats": 100,
+        "id": 5432,
         "coordinates": [
           {
             "latitude": 42.373464,
@@ -28,6 +31,7 @@
       {
         "name":"Langdell Hall",
         "location":"1545 Massachusetts Ave",
+        "id": 7890,
         "seats": 100,
         "coordinates": [
           {
@@ -39,6 +43,7 @@
       {
         "name":"Andover Theological",
         "location":"45 Francis Ave",
+        "id": 1834,
         "seats": 100,
         "coordinates": [
           {
@@ -50,6 +55,7 @@
       {
         "name":"Gutman",
         "location":"6 Appian Way",
+        "id": 54239,
         "seats": 100,
         "coordinates": [
           {
@@ -61,6 +67,7 @@
       {
         "name":"Schlesinger",
         "location":"3 James Street",
+        "id": 234567,
         "seats": 100,
         "coordinates": [
           {
@@ -72,6 +79,7 @@
       {
         "name":"Hicks/Kirkland House",
         "location":"64 J. F. Kennedy Street",
+        "id": 782829,
         "seats": 100,
         "coordinates": [
           {
@@ -83,6 +91,7 @@
       {
         "name":"Leverett",
         "location":"28 Dewolfe Street",
+        "id": 93788,
         "seats": 100,
         "coordinates": [
           {
@@ -94,6 +103,7 @@
       {
         "name":"Quincy House",
         "location":"58 Plympton Street",
+        "id": 88273,
         "seats": 100,
         "coordinates": [
           {
@@ -105,6 +115,7 @@
       {
         "name":"2 Divinity Avenue Yenching",
         "location":"2 Divinity Ave",
+        "id": 7329812,
         "seats": 100,
         "coordinates": [
           {
@@ -116,6 +127,7 @@
       {
         "name":"Hilles",
         "location":"59 Shepard Street",
+        "id": 112233,
         "seats": 100,
         "coordinates": [
           {
@@ -127,6 +139,7 @@
       {
         "name":"Houghton",
         "location":"29 Harvard Yard",
+        "id": 8374637,
         "seats": 100,
         "coordinates": [
           {
@@ -138,6 +151,7 @@
       {
         "name":"Pusey",
         "location":"Harvard Yard",
+        "id": 34567854,
         "seats": 100,
         "coordinates": [
           {
@@ -149,6 +163,7 @@
       {
         "name":"Baker / Bloomberg",
         "location":"25 Harvard Way",
+        "id": 9383746,
         "seats": 100,
         "coordinates": [
           {
@@ -160,6 +175,7 @@
       {
         "name":"Countway",
         "location":"10 Shattuck Street",
+        "id": 137847,
         "seats": 100,
         "coordinates": [
           {
@@ -171,6 +187,7 @@
       {
         "name":"Smith Campus Center",
         "location":"75 Mt Auburn Street",
+        "id": 323894,
         "seats": 100,
         "coordinates": [
           {
@@ -184,10 +201,12 @@
   {
     "name":"Technische Universität",
     "location":"Resselgasse 4, 1040 Wien, Österreich",
+    "id": 2938475,
     "libraries": [
       { 
         "name": "Bibliothek",
         "location":"Resselgasse 4, 1040 Wien, Österreich",
+        "id": 12834,
         "seats": 100,
         "coordinates": [
           {
@@ -200,11 +219,13 @@
   },
   {
     "name":"National University of Singapore",
-    "location":"",
+    "location":"21 Lower Kent Ridge Rd | Singapore",
+    "id": 3289327,
     "libraries": [
       { 
         "name": "Central Library",
         "location":"12 Kent Ridge Cres, Singapore 119275",
+        "id": 193746,
         "seats": 100,
         "coordinates": [
           {
@@ -216,6 +237,7 @@
       {
         "name":"Yale-NUS Library",
         "location":"20 College Ave E",
+        "id": 1283464,
         "seats": 100,
         "coordinates": [
           {
@@ -227,6 +249,7 @@
       {
         "name":"Hon Sui Sen",
         "location":"1 Hon Sui Sen Dr, Singapore 117588",
+        "id": 98738927,
         "seats": 100,
         "coordinates": [
           {
@@ -240,10 +263,12 @@
   {
     "name":"Example University-Name",
     "location": "Place, State | Country",
+    "id": 47289,
     "libraries": [
       {
         "name":"Example Library 1",
         "location":"...",
+        "id": 334554,
         "seats": 42,
         "coordinates": [
           {

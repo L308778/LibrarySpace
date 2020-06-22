@@ -29,7 +29,6 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     display: 'flex',
-    flexDirection: 'vertical',
     justifyContent: 'space-around',
     alignItems: 'center',
     height: '100%',
@@ -41,7 +40,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight:"bold",
     marginTop:30,
-    fontFamily:"italic",
   },
   touch: {
     paddingTop: 20,
