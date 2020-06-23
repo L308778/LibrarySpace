@@ -22,8 +22,8 @@ export default class LibraryScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // Copy the route parameter into the state. Here we use params twice, given that we have initialized parameters in the navigator
-      libraryDetails: this.props.route.params.params.libraryDetails,
+      // Copy the route parameter into the state.
+      libraryDetails: this.props.route.params.libraryDetails,
     };
   }
 
