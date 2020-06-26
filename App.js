@@ -20,7 +20,7 @@ function LibTabs(props) {
       <Tab.Screen
         name="MapScreen"
         component={LibraryMap}
-        initialParams={props.route}
+        initialParams={props.route.params}
       />
     </Tab.Navigator>
   );
