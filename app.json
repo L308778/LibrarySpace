@@ -9,9 +9,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/library/icons/LibSpaceIconTxt.png",
+    "icon": "./src/res/icons/LibSpaceIconTxt.png",
     "splash": {
-      "image": "./src/library/icons/LibSpaceIcon.png",
+      "image": "./src/res/icons/LibSpaceIcon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

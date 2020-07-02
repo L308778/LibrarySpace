@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-import LibSpaceIcon from '../library/icons/LibSpaceIcon.png'
+import LibSpaceIcon from '../res/icons/LibSpaceIcon.png'
 
 // look into https://github.com/react-navigation/react-navigation/issues/156 to hook up woiht Redux
 class SplashScreen extends React.Component {
