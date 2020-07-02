@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "libspaceapp",
+    "slug": "snack-83e3e334-746f-4e67-8fe0-4f6fc92aa2da",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/library/icons/LibSpaceIconTxt.png",
+    "splash": {
+      "image": "./src/library/icons/LibSpaceIcon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
