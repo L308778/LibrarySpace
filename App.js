@@ -3,44 +3,51 @@ import { View, Text } from 'react-native';
 import { NavigationContainer, navigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import HomeScreen from './Screens/HomeScreen.js';
-import SearchScreen from './Screens/SearchScreen.js';
-import LibraryScreen from './Screens/LibraryScreen.js';
-import LibraryMap from './Screens/LibraryScreens/LibMap.js';
-import LibraryData from './Screens/LibraryScreens/LibData.js';
 
-const Stack = createStackNavigator();
-const Tab = createMaterialTopTabNavigator();
+//Import Screens to be used for navigation
+import SearchScreen from './Screens/MainScreens/SearchScreen.js';
+import LibraryScreen from './Screens/MainScreens/LibraryScreen.js';
+import LibraryMap from './Screens/Features/MapScreen.js';
+import LibraryData from './Screens/Features/DataScreen.js';
+import SplashScreen from './Screens/MainScreens/SplashScreen';
 
-//Using a nested stack navigator with a tab navigator inside to display the library features on separate screens. Here we are passing initial parameters to the second Tab Screen (MapScreen), that we are able to fetch the parameters we send to the first screen (DataScreen)
-function LibTabs(props) {
+
+/* Two navigators are used for the application. The Main Navigator is a stack which navigates through the ./Screens/MainScreens
+Folder and is basically navigating through the whole app. 
+The LibFeature Navigator is a tab Navigator and navigates through the Feature Screens in the ./Screens/Features Folder. The
+Features are embedded in the screen which then actually show data illustrations or maps etc.*/
+const Feature = createMaterialTopTabNavigator();
+const Main = createStackNavigator();
+
+
+function LibFeature(props) {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="DataScreen" component={LibraryData} />
-      <Tab.Screen
+    <Feature.Navigator>
+      <Feature.Screen name="DataScreen" component={LibraryData} />
+      <Feature.Screen
         name="MapScreen"
         component={LibraryMap}
         initialParams={props.route.params}
       />
-    </Tab.Navigator>
+    </Feature.Navigator>
   );
 }
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="HomeScreen">
-        <Stack.Screen
-          name="HomeScreen"
-          component={HomeScreen}
+      <Main.Navigator initialRouteName="SplashScreen">
+        <Main.Screen
+          name="SplashScreen"
+          component={SplashScreen}
           options={{ title: null, headerShown: false }}
         />
-        <Stack.Screen
+        <Main.Screen
           name="SearchScreen"
           component={SearchScreen}
           options={{ title: null , headerShown:false}}
         />
-        <Stack.Screen
+        <Main.Screen
           name="LibraryScreen"
           component={LibraryScreen}
           options={{
@@ -54,12 +61,12 @@ function App() {
           },
         }}
         />
-        <Stack.Screen
+        <Main.Screen
           name="LibraryComponent"
-          component={LibTabs}
-          options={{ title: null, headerShown: false }}
+          component={LibFeature}
+          options={{ title: null , headerShown:false}}
         />
-      </Stack.Navigator>
+      </Main.Navigator>
     </NavigationContainer>
   );
 }

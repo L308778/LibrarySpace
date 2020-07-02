@@ -13,12 +13,6 @@ import {
 import Constants from 'expo-constants';
 import Expo from 'expo';
 import MapView, { Marker } from 'react-native-maps';
-import * as Location from 'expo-location';
-
-//Zu Machen: Layout für MapScreen; generell Layout verbessern; Key für Flatlists; GeoLocation verbessern
-//Sachen die wir machen können: 
-//Ein Ranking von Availability zwischen den Unis. 
-
 
 
 export default class LibraryScreen extends React.Component {
@@ -42,14 +36,15 @@ export default class LibraryScreen extends React.Component {
     clicks the below button component. For the google link the react-native-open-maps library is used. 
     Link: https://www.npmjs.com/package/react-native-open-maps#default-function-openoptions*/
 
-
     let coordinate = this.state.libraryDetails.coordinates[0];
+    
     const libLoc = {
       latitude: coordinate.latitude, 
       longitude: coordinate.longitude,
       zoom: 25, 
       query: this.state.libraryDetails.name + ""};
-    const openGoogle = createOpenLink(libLoc);
+    
+      const openGoogle = createOpenLink(libLoc);
 
     return (
       <View style={styles.container}>
@@ -85,7 +80,7 @@ export default class LibraryScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    display: 'flex',
+    flex:1,
     justifyContent: 'space-around',
     alignItems: 'center',
     height: '100%',

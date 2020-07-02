@@ -7,8 +7,8 @@ import {
   Image,
   FlatList,
 } from 'react-native';
-import AppIntroSlider from 'react-native-app-intro-slider';
 import Constants from 'expo-constants';
+
 
 export default class LibraryScreen extends React.Component {
   constructor(props) {
@@ -21,7 +21,10 @@ export default class LibraryScreen extends React.Component {
   }
 
   render() {
-    //Logging the library data unit to examine validity. Here the selected library is again send through the params prop to the specific Library Screens, where the features are displayed. Here the structure to pass the params is different, given that the data is passed to the child navigator (tab navigator) from the current stack navigator.
+    /*In the LibraryScreen can then select the preferred library.
+    Here the selected library is again send through the params prop to the specific Library Screens, 
+    where the features are displayed. Here the structure to pass the params is different, 
+    given that the data is passed to the child navigator (tab navigator) from the current stack navigator.*/
 
     console.log(this.state.libraryDetails.libraries);
     return (
@@ -56,12 +59,11 @@ export default class LibraryScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: Constants.statusBarHeight,
-    backgroundColor: 'darkred',
+    backgroundColor: 'white',
   },
   header: {
     padding: 20,
-    color: 'white',
+    color: 'darkred',
     alignSelf: 'center',
     marginVertical: 10,
     fontSize: 50,
@@ -71,15 +73,16 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 20,
     alignContent: 'center',
-    backgroundColor: 'darkred',
+    backgroundColor: 'white',
     borderRadius: 10,
-    borderWidth: 1,
-    borderColor: 'white',
+    borderWidth: 5,
+    borderColor: 'darkred',
     margin: 10,
   },
   text: {
     fontSize: 20,
-    color: 'white',
+    color: 'darkred',
+    fontWeight:"bold",
     alignSelf: 'center',
   },
 });

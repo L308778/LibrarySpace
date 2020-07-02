@@ -5,14 +5,11 @@ import {
   View,
   TouchableOpacity,
   Image,
-  FlatList,
-  Dimensions,
   Button,
 } from 'react-native';
 import Constants from 'expo-constants';
 import Expo from 'expo';
 import MapView, { Marker } from 'react-native-maps';
-import * as Location from 'expo-location';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default class LibraryScreen extends React.Component {
@@ -27,6 +24,9 @@ export default class LibraryScreen extends React.Component {
   componentDidMount() {
     console.log(this.state.libraryDetails);
   }
+
+  /*Here the user is able to see how many people are currently in the selected library. The user can also navigate
+  to the MapScreen where he or she can look at the map provided in the app or go directly to google maps.*/
 
   render() {
     //Access the coordinates array from the Data.json and save it in coordinate variable to be accessed
