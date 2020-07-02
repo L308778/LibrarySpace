@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity, FlatList } from 'react-native
 import Constants from 'expo-constants';
 import LibraryScreen from './LibraryScreen';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {header, background, flatlistscreen} from "../../assets/styles.js"
 
 // Importing library data as JSON-Object
 import libraries from '../../Data.json';
@@ -57,17 +58,10 @@ export default class HomeScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    marginTop: Constants.statusBarHeight,
-    backgroundColor: 'white',
+    ...flatlistscreen.container
   },
   header: {
-    padding: 20,
-    color: 'darkred',
-    alignSelf: 'center',
-    marginVertical: 10,
-    fontSize: 50,
-    fontWeight: 'bold',
+    ...header.text
   },
   icon: {
     alignSelf: 'center',
@@ -75,20 +69,10 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   touch: {
-    paddingTop: 20,
-    paddingBottom: 20,
-    alignContent: 'center',
-    backgroundColor: 'white',
-    borderRadius: 10,
-    borderWidth: 5,
-    borderColor: 'darkred',
-    margin: 10,
+    ...flatlistscreen.touch
   },
   textName: {
-    fontSize: 20,
-    fontWeight:"bold",
-    color: 'darkred',
-    alignSelf: 'center',
+    ...flatlistscreen.text
   },
   textLoc:{
     fontSize: 15,

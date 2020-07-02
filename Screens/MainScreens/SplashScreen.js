@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 import LibSpaceIcon from '../../assets/Graphics/LibSpaceIcon.png'
+import {introscreen} from "../../assets/styles.js"
 
 /*SplashScreen is the Loading Page used to load the data fetch and is the intro screen for the application. 
 The following screen is the SearchScreen*/
@@ -40,13 +41,10 @@ class SplashScreen extends React.Component {
 
 const styles = {
   view: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'white'
+    ...introscreen.view
   },
   Icon: {
-    alignSelf: 'center',
+    ...introscreen.Icon
   }
 }
 

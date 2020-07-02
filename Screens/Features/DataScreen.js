@@ -11,6 +11,7 @@ import Constants from 'expo-constants';
 import Expo from 'expo';
 import MapView, { Marker } from 'react-native-maps';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {button, header, background} from "../../assets/styles.js"
 
 export default class LibraryScreen extends React.Component {
   constructor(props) {
@@ -47,7 +48,7 @@ export default class LibraryScreen extends React.Component {
           onPress={() => {
             this.props.navigation.navigate('SearchScreen');
           }}>
-          <Text style={styles.touchText}>Back to Universities</Text>
+          <Text style={styles.touchText}>Universities</Text>
         </TouchableOpacity>
       </View>
     );
@@ -56,17 +57,10 @@ export default class LibraryScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    marginTop: Constants.statusBarHeight,
-    alignItems: 'center',
-    backgroundColor:"azure"
+    ...background.container
   },
   header: {
-    padding: 20,
-    fontWeight:"bold",
-    alignSelf: 'center',
-    marginVertical: 10,
-    fontSize: 40,
+    ...header.text
   },
   image: {
     height: 400,
@@ -74,21 +68,9 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   touchText: {
-    marginRight: 40,
-    marginLeft: 40,
-    fontWeight: 'bold',
-    fontSize: 30,
-    color: 'white',
+    ...button.text
   },
   touch: {
-    paddingTop: 20,
-    paddingBottom: 20,
-    textAlign: 'center',
-    backgroundColor: 'darkred',
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: 'white',
-    alignContent: 'center',
-    margin: 20,
+    ...button.touch
   },
 });

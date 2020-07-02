@@ -13,6 +13,7 @@ import {
 import Constants from 'expo-constants';
 import Expo from 'expo';
 import MapView, { Marker } from 'react-native-maps';
+import {button, header, background} from "../../assets/styles.js"
 
 
 export default class LibraryScreen extends React.Component {
@@ -51,6 +52,7 @@ export default class LibraryScreen extends React.Component {
         <Text style={styles.header}> Location </Text>
         <MapView
           style={styles.mapStyle}
+          provider="google"
           initialRegion={{
             latitude: coordinate.latitude,
             longitude: coordinate.longitude,
@@ -69,10 +71,9 @@ export default class LibraryScreen extends React.Component {
           style = {styles.touch}
           >
             <Text style = {styles.touchText}>
-              Go to Google Maps
+              Google Maps
             </Text>
           </TouchableOpacity>
-          <Text style={styles.text}>Address : {this.state.libraryDetails.location}</Text>
       </View>
     );
   }
@@ -80,46 +81,19 @@ export default class LibraryScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    height: '100%',
-    textAlign: 'center',
-    backgroundColor: 'azure',
+    ...background.container
   },
   header: {
-    fontWeight:"bold",
-    padding: 20,
-    alignSelf: 'center',
-    marginVertical: 10,
-    fontSize: 40,
-  },
-  text: {
-    padding: 20,
-    alignSelf: 'center',
-    fontSize: 25,
-    fontStyle:"italic"
+    ...header.text
   },
   mapStyle: {
     width: "100%",
     height: 400,
   },
   touchText: {
-    marginRight: 40,
-    marginLeft: 40,
-    fontWeight: 'bold',
-    fontSize: 30,
-    color: 'white',
+    ...button.text
   },
   touch: {
-    paddingTop: 20,
-    paddingBottom: 20,
-    textAlign: 'center',
-    backgroundColor: 'darkred',
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: 'white',
-    alignContent: 'center',
-    margin: 20,
+    ...button.touch
   },
 });

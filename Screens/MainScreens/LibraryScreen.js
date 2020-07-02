@@ -7,7 +7,7 @@ import {
   Image,
   FlatList,
 } from 'react-native';
-import Constants from 'expo-constants';
+import {header, background, flatlistscreen} from "../../assets/styles.js"
 
 
 export default class LibraryScreen extends React.Component {
@@ -58,31 +58,15 @@ export default class LibraryScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: 'white',
+    ...flatlistscreen.container
   },
   header: {
-    padding: 20,
-    color: 'darkred',
-    alignSelf: 'center',
-    marginVertical: 10,
-    fontSize: 50,
-    fontWeight: 'bold',
+    ...header.text
   },
   touch: {
-    paddingTop: 20,
-    paddingBottom: 20,
-    alignContent: 'center',
-    backgroundColor: 'white',
-    borderRadius: 10,
-    borderWidth: 5,
-    borderColor: 'darkred',
-    margin: 10,
+    ...flatlistscreen.touch
   },
   text: {
-    fontSize: 20,
-    color: 'darkred',
-    fontWeight:"bold",
-    alignSelf: 'center',
+    ...flatlistscreen.text
   },
 });
