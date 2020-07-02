@@ -1,0 +1,283 @@
+[
+  {
+    "name": "Havard University",
+    "location":"Cambridge, MA | USA",
+    "id": 1234445,
+    "libraries": [
+      { 
+        "name": "Lamont",
+        "location":"11 Quincy Street",
+        "id": 1234,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3727855,
+            "longitude" : -71.11547
+          }
+        ]
+      },
+      {
+        "name":"Widener",
+        "location":"31 Harvard Yard",
+        "seats": 100,
+        "id": 5432,
+        "coordinates": [
+          {
+            "latitude": 42.373464,
+            "longitude" : -71.1165039
+          }
+        ]
+      },
+      {
+        "name":"Langdell Hall",
+        "location":"1545 Massachusetts Ave",
+        "id": 7890,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3779767,
+            "longitude" : -71.1185014
+          }
+        ]
+      },
+      {
+        "name":"Andover Theological",
+        "location":"45 Francis Ave",
+        "id": 1834,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.379661560058594,
+            "longitude" : -71.11317443847656
+          }
+        ]
+      },
+      {
+        "name":"Gutman",
+        "location":"6 Appian Way",
+        "id": 54239,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3748925,
+            "longitude" : -71.1217597
+          }
+        ]
+      },
+      {
+        "name":"Schlesinger",
+        "location":"3 James Street",
+        "id": 234567,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.37578582763672,
+            "longitude" : -71.12311553955078
+          }
+        ]
+      },
+      {
+        "name":"Hicks/Kirkland House",
+        "location":"64 J. F. Kennedy Street",
+        "id": 782829,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3715115,
+            "longitude" : -71.1209352
+          }
+        ]
+      },
+      {
+        "name":"Leverett",
+        "location":"28 Dewolfe Street",
+        "id": 93788,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3693862,
+            "longitude" : -71.1168004
+          }
+        ]
+      },
+      {
+        "name":"Quincy House",
+        "location":"58 Plympton Street",
+        "id": 88273,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3705940246582,
+            "longitude" : -71.1175308227539
+          }
+        ]
+      },
+      {
+        "name":"2 Divinity Avenue Yenching",
+        "location":"2 Divinity Ave",
+        "id": 7329812,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3776604,
+            "longitude" : -71.1137282
+          }
+        ]
+      },
+      {
+        "name":"Hilles",
+        "location":"59 Shepard Street",
+        "id": 112233,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3809301,
+            "longitude" : -71.1253307
+          }
+        ]
+      },
+      {
+        "name":"Houghton",
+        "location":"29 Harvard Yard",
+        "id": 8374637,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3731813,
+            "longitude" : -71.115902
+          }
+        ]
+      },
+      {
+        "name":"Pusey",
+        "location":"Harvard Yard",
+        "id": 34567854,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3737167,
+            "longitude" : -71.1157815
+          }
+        ]
+      },
+      {
+        "name":"Baker / Bloomberg",
+        "location":"25 Harvard Way",
+        "id": 9383746,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3731813,
+            "longitude" : 71.1254629
+          }
+        ]
+      },
+      {
+        "name":"Countway",
+        "location":"10 Shattuck Street",
+        "id": 137847,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.3351382,
+            "longitude" : -71.1036698
+          }
+        ]
+      },
+      {
+        "name":"Smith Campus Center",
+        "location":"75 Mt Auburn Street",
+        "id": 323894,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 42.37261199951172,
+            "longitude" : -71.11865234375
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name":"Technische Universität",
+    "location":"Resselgasse 4, 1040 Wien, Österreich",
+    "id": 2938475,
+    "libraries": [
+      { 
+        "name": "Bibliothek",
+        "location":"Resselgasse 4, 1040 Wien, Österreich",
+        "id": 12834,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 48.199180603027344,
+            "longitude" : 16.368038177490234
+          }
+        ]
+      }
+      ]
+  },
+  {
+    "name":"National University of Singapore",
+    "location":"21 Lower Kent Ridge Rd | Singapore",
+    "id": 3289327,
+    "libraries": [
+      { 
+        "name": "Central Library",
+        "location":"12 Kent Ridge Cres, Singapore 119275",
+        "id": 193746,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 1.2970556,
+            "longitude" : 103.7728132
+          }
+        ]
+      },
+      {
+        "name":"Yale-NUS Library",
+        "location":"20 College Ave E",
+        "id": 1283464,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 1.3072073,
+            "longitude" : 103.7725555
+          }
+        ]
+      },
+      {
+        "name":"Hon Sui Sen",
+        "location":"1 Hon Sui Sen Dr, Singapore 117588",
+        "id": 98738927,
+        "seats": 100,
+        "coordinates": [
+          {
+            "latitude": 1.28967,
+            "longitude" : 103.85007
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name":"Example University-Name",
+    "location": "Place, State | Country",
+    "id": 47289,
+    "libraries": [
+      {
+        "name":"Example Library 1",
+        "location":"...",
+        "id": 334554,
+        "seats": 42,
+        "coordinates": [
+          {
+            "latitude": 48.2080354,
+            "longitude" : 16.3617866
+          }
+        ]
+      }
+    ]
+  }
+]
+
