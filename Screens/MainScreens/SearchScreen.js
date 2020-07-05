@@ -1,9 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, FlatList } from 'react-native';
-import Constants from 'expo-constants';
 import LibraryScreen from './LibraryScreen';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import {header, background, flatlistscreen} from "../../assets/styles.js"
+import { background, header, touchable } from "../../styles.js"
 
 // Importing library data as JSON-Object
 import libraries from '../../Data.json';
@@ -36,16 +35,15 @@ export default class HomeScreen extends React.Component {
                 onPress={() => {
                   item.libraries.length === 1
                     ? this.props.navigation.navigate('LibraryComponent', {
-                        screen: 'DataScreen',
-                        params: { libraryDetails: item.libraries[0] },
-                      })
+                      screen: 'Availability',
+                      params: { libraryDetails: item.libraries[0] },
+                    })
                     : this.props.navigation.navigate('LibraryScreen', {
-                        libraryDetails: item,
-                      });
+                      libraryDetails: item,
+                    });
                 }}>
                 <View style={styles.touch}>
-                  <Text style={styles.textName}>{item.name}</Text>
-                  <Text style={styles.textLoc}>{item.location}</Text>
+                  <Text style={styles.text}>{item.name}</Text>
                 </View>
               </TouchableOpacity>
             )
@@ -58,7 +56,7 @@ export default class HomeScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    ...flatlistscreen.container
+    ...background.container
   },
   header: {
     ...header.text
@@ -69,15 +67,9 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   touch: {
-    ...flatlistscreen.touch
+    ...touchable.touch
   },
-  textName: {
-    ...flatlistscreen.text
+  text: {
+    ...touchable.text
   },
-  textLoc:{
-    fontSize: 15,
-    fontStyle:"italic",
-    color: 'darkred',
-    alignSelf: 'center',
-  }
 });

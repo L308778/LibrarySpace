@@ -1,6 +1,6 @@
 [
   {
-    "name": "Havard University",
+    "name": "Harvard University",
     "location":"Cambridge, MA | USA",
     "id": 1234445,
     "libraries": [
@@ -229,7 +229,7 @@
         "seats": 100,
         "coordinates": [
           {
-            "latitude": 1.2970556,
+            "latitude": 1.29706,
             "longitude" : 103.7728132
           }
         ]

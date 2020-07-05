@@ -22,10 +22,19 @@ const Main = createStackNavigator();
 
 function LibFeature(props) {
   return (
-    <Feature.Navigator>
-      <Feature.Screen name="DataScreen" component={LibraryData} />
+    <Feature.Navigator
+      tabBarOptions={{
+        activeTintColor: 'darkred',
+        labelStyle: { fontSize: 15, fontWeight: "bold", margin: 10 },
+        style: { backgroundColor: 'white' },
+        indicatorStyle: { backgroundColor: "darkred" }
+      }}>
       <Feature.Screen
-        name="MapScreen"
+        name="Availability"
+        component={LibraryData}
+      />
+      <Feature.Screen
+        name="Location"
         component={LibraryMap}
         initialParams={props.route.params}
       />
@@ -45,26 +54,26 @@ function App() {
         <Main.Screen
           name="SearchScreen"
           component={SearchScreen}
-          options={{ title: null , headerShown:false}}
+          options={{ title: null, headerShown: false }}
         />
         <Main.Screen
           name="LibraryScreen"
           component={LibraryScreen}
           options={{
-          title: null,
-          headerStyle: {
-            backgroundColor: 'darkred',
-          },
-          headerTintColor: 'white',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },
-        }}
+            title: null,
+            headerStyle: {
+              backgroundColor: 'darkred',
+            },
+            headerTintColor: 'white',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
         />
         <Main.Screen
           name="LibraryComponent"
           component={LibFeature}
-          options={{ title: null , headerShown:false}}
+          options={{ title: null, headerShown: false }}
         />
       </Main.Navigator>
     </NavigationContainer>

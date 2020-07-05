@@ -1,5 +1,5 @@
 import React from 'react';
-import {createOpenLink} from "react-native-open-maps"
+import { createOpenLink } from "react-native-open-maps"
 import {
   StyleSheet,
   Text,
@@ -13,7 +13,7 @@ import {
 import Constants from 'expo-constants';
 import Expo from 'expo';
 import MapView, { Marker } from 'react-native-maps';
-import {button, header, background} from "../../assets/styles.js"
+import { button, header, background, touchable } from "../../styles.js"
 
 
 export default class LibraryScreen extends React.Component {
@@ -38,14 +38,15 @@ export default class LibraryScreen extends React.Component {
     Link: https://www.npmjs.com/package/react-native-open-maps#default-function-openoptions*/
 
     let coordinate = this.state.libraryDetails.coordinates[0];
-    
+
     const libLoc = {
-      latitude: coordinate.latitude, 
+      latitude: coordinate.latitude,
       longitude: coordinate.longitude,
-      zoom: 25, 
-      query: this.state.libraryDetails.name + ""};
-    
-      const openGoogle = createOpenLink(libLoc);
+      zoom: 25,
+      query: this.state.libraryDetails.name + ""
+    };
+
+    const openGoogle = createOpenLink(libLoc);
 
     return (
       <View style={styles.container}>
@@ -66,14 +67,14 @@ export default class LibraryScreen extends React.Component {
             }}
           />
         </MapView>
-          <TouchableOpacity
-          onPress = {openGoogle}
-          style = {styles.touch}
-          >
-            <Text style = {styles.touchText}>
-              Google Maps
+        <TouchableOpacity
+          onPress={openGoogle}
+          style={styles.touch}
+        >
+          <Text style={styles.touchText}>
+            Google Maps
             </Text>
-          </TouchableOpacity>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -90,10 +91,10 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 400,
   },
-  touchText: {
-    ...button.text
-  },
   touch: {
-    ...button.touch
+    ...touchable.touch
+  },
+  touchText: {
+    ...touchable.text
   },
 });

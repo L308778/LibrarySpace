@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   StyleSheet,
   Text,
@@ -7,7 +7,7 @@ import {
   Image,
   FlatList,
 } from 'react-native';
-import {header, background, flatlistscreen} from "../../assets/styles.js"
+import { background, header, touchable } from "../../styles.js"
 
 
 export default class LibraryScreen extends React.Component {
@@ -40,7 +40,7 @@ export default class LibraryScreen extends React.Component {
               <TouchableOpacity
                 onPress={() => {
                   this.props.navigation.navigate('LibraryComponent', {
-                    screen: 'DataScreen',
+                    screen: 'Availability',
                     params: { libraryDetails: item },
                   });
                 }}>
@@ -58,15 +58,15 @@ export default class LibraryScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    ...flatlistscreen.container
+    ...background.container
   },
   header: {
     ...header.text
   },
   touch: {
-    ...flatlistscreen.touch
+    ...touchable.touch
   },
   text: {
-    ...flatlistscreen.text
+    ...touchable.text
   },
 });

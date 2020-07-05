@@ -11,7 +11,7 @@ import Constants from 'expo-constants';
 import Expo from 'expo';
 import MapView, { Marker } from 'react-native-maps';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import {button, header, background} from "../../assets/styles.js"
+import { background, header, touchable } from "../../styles.js"
 
 export default class LibraryScreen extends React.Component {
   constructor(props) {
@@ -67,10 +67,10 @@ const styles = StyleSheet.create({
     width: 400,
     alignSelf: 'center',
   },
-  touchText: {
-    ...button.text
-  },
   touch: {
-    ...button.touch
+    ...touchable.touch
+  },
+  touchText: {
+    ...touchable.text
   },
 });
